@@ -58,7 +58,7 @@
     <p>@comment.Message</p>
     @if (comment.IsAdmin)
     {
-<p> <b>- A D M I N -:</b> @comment.Username</p> }
+<p> <b>Admin: </b> @comment.Username</p> }  
 else
 {
 <p> <b>User:</b> @comment.Username</p>}
@@ -74,7 +74,7 @@ else
 
 <script>
     function myConfirm() {
-        var result = confirm("Want to delete?");
+        var result = confirm("Want to change status?");
         if (result == true) {
             return true;
         } else {
